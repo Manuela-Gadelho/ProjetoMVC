@@ -65,18 +65,18 @@ Essa abordagem garante maior modularidade e facilidade de manutenção no códig
 
 | Funcionalidade        | Exemplo de Tela             |
 |-----------------------|-----------------------------|
-| Dados do Aluno        | ![Dados Pessoais](![{9FDA83C6-9308-452A-A167-2706807B89D1}](https://github.com/user-attachments/assets/6f5b795c-c0b7-4385-9651-be9b91bbe52e)
+| Dados do Aluno        | (![{9FDA83C6-9308-452A-A167-2706807B89D1}](https://github.com/user-attachments/assets/6f5b795c-c0b7-4385-9651-be9b91bbe52e)
 )  |
-| Informações do Curso  | ![Curso](![{EE5286D9-B124-4511-9D25-8706F057EE02}](https://github.com/user-attachments/assets/3f4ddb23-9a16-4bdd-8f34-e4c58520834f)
+| Informações do Curso  | (![{EE5286D9-B124-4511-9D25-8706F057EE02}](https://github.com/user-attachments/assets/3f4ddb23-9a16-4bdd-8f34-e4c58520834f)
 )           |
-| Notas e Faltas        | ![Notas](![{F6FF91FD-6DF3-4490-8056-FC26020291F9}](https://github.com/user-attachments/assets/e20a5be5-f54f-4b8d-949e-52b86678f476)
+| Notas e Faltas        | (![{F6FF91FD-6DF3-4490-8056-FC26020291F9}](https://github.com/user-attachments/assets/e20a5be5-f54f-4b8d-949e-52b86678f476)
 )           |
-| Boletim Escolar       | ![Boletim](![{5182953C-CA1F-47FD-BEE3-6BF3D1EF5BF0}](https://github.com/user-attachments/assets/31b36493-72cb-4c87-85db-12266e9b4d89)
+| Boletim Escolar       | (![{5182953C-CA1F-47FD-BEE3-6BF3D1EF5BF0}](https://github.com/user-attachments/assets/31b36493-72cb-4c87-85db-12266e9b4d89)
 )         |
-| Menu Aluno            | ![Menu Aluno](![image](https://github.com/user-attachments/assets/db4db690-3abb-4df2-8b70-b1ee0aa1cd2e)
+| Menu Aluno            | (![image](https://github.com/user-attachments/assets/db4db690-3abb-4df2-8b70-b1ee0aa1cd2e)
 )      |
-| Menu Notas e Faltas   | ![Menu Notas](![{994E2965-0CF7-492B-9529-A8591A17FA60}](https://github.com/user-attachments/assets/83a765f0-7b08-4f30-b508-671326842d2a)
+| Menu Notas e Faltas   | (![{994E2965-0CF7-492B-9529-A8591A17FA60}](https://github.com/user-attachments/assets/83a765f0-7b08-4f30-b508-671326842d2a)
 )      |
-| Menu Ajuda            | ![Ajuda](![{BB2EA1C8-FE29-4DB1-A2CB-03415D141E92}](https://github.com/user-attachments/assets/eade8fce-902a-4217-9972-b1eb1e90e1bf)
+| Menu Ajuda            | (![{BB2EA1C8-FE29-4DB1-A2CB-03415D141E92}](https://github.com/user-attachments/assets/eade8fce-902a-4217-9972-b1eb1e90e1bf)
 )           |
 
