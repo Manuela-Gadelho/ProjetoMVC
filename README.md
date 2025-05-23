@@ -1,72 +1,76 @@
-# Resumo do Projeto MVC – Sistema de Gestão Acadêmica
 
-Este projeto consiste em um sistema desktop acadêmico desenvolvido com base na arquitetura MVC (Model-View-Controller), utilizando a linguagem Java com interface gráfica (Swing) e banco de dados MySQL. 
+# 🎓 Sistema de Gestão Acadêmica - Arquitetura MVC
 
-O sistema tem como objetivo gerenciar o cadastro de alunos, seus cursos, desempenho escolar (notas e faltas), e gerar consultas organizadas dessas informações, respeitando uma divisão clara entre modelo de dados, regras de negócio e interface com o usuário.
+Este projeto é uma aplicação desktop acadêmica desenvolvida em **Java**, com interface gráfica baseada em **Swing** e persistência de dados usando **MySQL**. A estrutura segue os princípios da arquitetura **MVC (Model-View-Controller)** para garantir organização, clareza e facilidade de manutenção.
 
-##  Funcionalidades principais:
+## 📌 Objetivo
 
- - Cadastro, consulta, alteração e exclusão de alunos.
+O sistema tem como foco o gerenciamento completo de dados acadêmicos, incluindo:
+- Cadastro e manutenção de alunos;
+- Associação de cursos por campus e período;
+- Registro de desempenho escolar (notas e faltas);
+- Consulta e emissão de boletins organizados e claros.
 
- - Associação de alunos a cursos com informações de campus e período.
+## ⚙️ Funcionalidades Principais
 
- - Registro de notas e faltas por disciplina e semestre.
+- Criar, visualizar, atualizar e remover registros de alunos;
+- Relacionar alunos com seus respectivos cursos;
+- Lançar notas e controlar frequência por disciplina e semestre;
+- Gerar boletins escolares;
+- Validar entradas e evitar duplicidade de dados;
+- Interface gráfica amigável com menus intuitivos:
+  - Menu Aluno
+  - Menu Notas e Faltas
+  - Menu Ajuda
 
- - Consulta e geração de boletins.
+## 🧱 Estrutura MVC
 
- - Validações e controle de duplicidade para evitar dados inconsistentes.
+- **Modelo (Model):**  
+  Contém as classes `Aluno`, `Curso`, `Disciplina` e `Desempenho`, que representam diretamente as tabelas do banco de dados.
 
- - Navegação intuitiva por meio de menus separados: ```Aluno```, ```Notas e Faltas```, e ```Ajuda```.
+- **Visão (View):**  
+  Conjunto de telas criadas com Swing, organizadas por abas e menus, proporcionando uma navegação acessível e organizada ao usuário.
 
-## Arquitetura MVC aplicada:
+- **Controle (Controller):**  
+  Classes DAO como `AlunoDAO` e `DesempenhoDAO` fazem a ponte entre a interface e o banco de dados, centralizando as regras de acesso e persistência.
 
- - **Model (Modelo)**: Classes ```Aluno```, ```Curso```, ```Disciplina``` e ```Desempenho``` representam as entidades do banco.
+## 🔌 Conexão com Banco de Dados
 
- - **View (Visão)**: Telas gráficas (GUI com Swing), organizadas em abas e menus para melhor experiência do usuário.
+Para gerenciamento de conexões, o projeto utiliza a classe `ConnectionFactory`, que:
 
- - **Controller (Controle)**: Classes DAO (```AlunoDAO```, ```DesempenhoDAO``` etc.) centralizam a lógica de persistência e comunicação com o banco.
+- Cria e configura a conexão com o banco de dados MySQL;
+- Encapsula informações como URL, usuário e senha;
+- Fecha conexões e libera recursos após o uso;
+- Facilita reutilização de código e segurança.
 
-## Gerenciamento de Conexão:
+Essa abordagem garante maior modularidade e facilidade de manutenção no código.
 
-O projeto utiliza uma classe utilitária chamada ```ConnectionFactory```, responsável por:
+## ▶️ Como Executar
 
- - Estabelecer a conexão com o banco de dados MySQL;
+### Requisitos
 
- - Facilitar o reaproveitamento de código;
-
- - Encapsular os detalhes de configuração (URL, usuário, senha);
-
- - Fechar conexões e recursos após o uso, garantindo segurança e eficiência.
-
-Essa separação reforça a organização do projeto e permite escalabilidade e manutenção mais fáceis.
-
----
-
-## Como executar
-
-### Pré-requisitos
-- Java 17
-- Eclipse ou qualquer IDE Java
+- Java 17 ou superior
+- IDE Java (preferencialmente Eclipse)
 
 ### Passos
-1. Clone o repositório:
-```bash
-https://github.com/NicoleTrujillano/Projeto-MVC.git
-```
-2. Abra o projeto na sua IDE (Eclipse recomendado)
-3. Compile e execute a classe `Tela.java`
 
----
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/ManuelaExemplo/Projeto-MVC.git
+   ```
+2. Importe o projeto na sua IDE.
+3. Compile e execute a classe `Tela.java`.
 
-## Capturas de Tela
+## 🖼️ Capturas de Tela
 
-| Abas e Menus                            | Capturas de Tela       |
-|--------------------------------------------|------------|
-| **Dados Pessoais**                    | ![Tela Dados](images/aba_dados_pessoais.png)  |
-| **Curso**                    | ![Tela Curso](images/aba_curso.png)    |
-| **Notas e Faltas**                    | ![Tela Notas e Faltas](images/aba_notas_e_faltas.png)    |
-| **Boletim**                    | ![Tela Boletim](images/aba_gera_boletim.png)    |
-| **Menu Aluno**                    | ![Tela Menu Aluno](images/menu_aluno.png)    |
-| **Menu Notas e Faltas**                    | ![Tela Menu Notas e Faltas](images/menu_notas_e_faltas.png)    |
-| **Menu Ajuda**                    | ![Tela Menu Ajuda](images/menu_ajuda.png)    |
+| Funcionalidade        | Exemplo de Tela             |
+|-----------------------|-----------------------------|
+| Dados do Aluno        | ![Dados Pessoais](caminho)  |
+| Informações do Curso  | ![Curso](caminho)           |
+| Notas e Faltas        | ![Notas](caminho)           |
+| Boletim Escolar       | ![Boletim](caminho)         |
+| Menu Aluno            | ![Menu Aluno](caminho)      |
+| Menu Notas e Faltas   | ![Menu Notas](caminho)      |
+| Menu Ajuda            | ![Ajuda](caminho)           |
 
+*(Substitua `caminho` pelos links ou caminhos corretos das imagens caso deseje incluir)*
